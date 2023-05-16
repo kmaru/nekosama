@@ -28,10 +28,8 @@ jobs:
           ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "/sources/frontends/app" # App source code path
-          # api_location: "${{ github.workspace }}/sources/frontends/app/.output/server" # Api source code path - optional
-          api_location: "sources/frontends/app/.output/server" # Api source code path - optional
-          # output_location: "${{ github.workspace }}/sources/frontends/app/.output/public" # Built app content directory - optional
-          output_location: "sources/frontends/app/.output/public" # Built app content directory - optional
+          api_location: "${{ github.workspace }}/sources/frontends/app/.output/server" # Api source code path - optional
+          output_location: "${{ github.workspace }}/sources/frontends/app/.output/public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
       - uses: actions/upload-artifact@v3
         with:
