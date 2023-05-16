@@ -32,7 +32,7 @@ jobs:
           output_location: ".output/public" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
       - name: Tree
-        run: tree
+        run: tree -f sources/frontend/nekosama/.output
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
