@@ -4,15 +4,7 @@
   },
   "routes": [
     {
-      "route": "/index.html",
-      "redirect": "/"
-    },
-    {
-      "route": "/",
-      "rewrite": "/api/server"
+      "route": "/*", "allowedRoles" : ["authenticated"]
     }
-  ],
-  "navigationFallback": {
-    "rewrite": "/api/server"
-  }
+  ]
 }
