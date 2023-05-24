@@ -20,7 +20,7 @@
       "statusCode": 404
     },
     {
-      "route": "/*",
+      "route": "*",
       "allowedRoles": [
         "authenticated"
       ]
