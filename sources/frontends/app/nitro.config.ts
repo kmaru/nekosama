@@ -1,5 +1,5 @@
 import { defineNitroConfig } from "nitropack/config";
 
 export default defineNitroConfig({
-  preset: 'azure'
+  // preset: 'azure'
 })
