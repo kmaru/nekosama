@@ -9,6 +9,10 @@
       "statusCode": 404
     },
     {
+      "route": "/fabiocn.ico", 
+      "allowedRoles" : ["anonymous", "authenticated"]
+    },
+    {
       "route": "/_nuxt/*.{js,css,png,jpg,ico}", 
       "allowedRoles" : ["anonymous", "authenticated"]
     },
