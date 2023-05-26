@@ -1,16 +1,5 @@
 {
-  "platform": {
-    "apiRuntime": "node:16"
-  },
   "routes": [
-    {
-      "route": "/index.html",
-      "redirect": "/"
-    },
-    {
-      "route": "/",
-      "rewrite": "/api/server"
-    },
     {
       "route": "/.auth/login/twitter",
       "statusCode": 404
@@ -18,6 +7,13 @@
     {
       "route": "/.auth/login/github",
       "statusCode": 404
+    },
+    {
+      "route": "/fabiocn.ico",
+      "allowedRoles": [
+        "anonymous",
+        "authenticated"
+      ]
     },
     {
       "route": "/_nuxt/*.{js,css,png,jpg,ico}",
@@ -39,9 +35,6 @@
       ]
     }
   ],
-  "navigationFallback": {
-    "rewrite": "/api/server"
-  },
   "responseOverrides": {
     "401": {
       "statusCode": 302,
