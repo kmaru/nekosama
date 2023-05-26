@@ -9,7 +9,7 @@
       "statusCode": 404
     },
     {
-      "route": "/*", "allowedRoles" : ["authenticated"]
+      "route": "*", "allowedRoles" : ["authenticated"]
     }
   ],
   "responseOverrides": {
