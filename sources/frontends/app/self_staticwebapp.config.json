@@ -9,16 +9,15 @@
       "statusCode": 404
     },
     {
-      "route": "/_nuxt/*.{js,css,png,jpg}", 
+      "route": "/_nuxt/*.{js,css,png,jpg,ico}", 
       "allowedRoles" : ["anonymous", "authenticated"]
     },
     {
       "route": "/api/*", 
-      "allowedRoles" : ["authenticated"],
-      "statusCode": 403
+      "allowedRoles" : ["authenticated"]
     },
     {
-      "route": "*", 
+      "route": "/*", 
       "allowedRoles" : ["authenticated"]
     }
   ],
